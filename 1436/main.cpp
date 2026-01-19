@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -6,16 +7,19 @@ int main(){
     int n;
     cin >> n;
 
-    for(int i=0;i<n;i++){
-        if(i==6){
+    int num=666;
+    int cnt=0;
 
-        }
-        else if(i==66){
-            
-        }
-        else if(i==666){
+    while(1){
+        string s = to_string(num);
 
+        if(to_string(num).find("666")!=-1) cnt++;
+        if(cnt==n){
+            cout << num;
+            break;
         }
+        num++;
     }
+    
     return 0;
 }
