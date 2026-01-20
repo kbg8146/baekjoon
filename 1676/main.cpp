@@ -9,7 +9,7 @@ int main(){
     cin >> n;
     for(int num=1;num<=n;num++){
         int x=num;
-        // 5의 배수
+
         while(x%5==0){ 
             cnt++;
             x = x/5;
