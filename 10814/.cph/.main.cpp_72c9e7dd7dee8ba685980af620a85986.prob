@@ -1,0 +1,1 @@
+{"name":"Local: main","url":"c:\\baekjoon\\10814\\main.cpp","tests":[{"id":1768971221238,"input":"3\n21 Junkyu\n21 Dohyun\n20 Sunyoung","output":"20 Sunyoung\n21 Junkyu\n21 Dohyun"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\baekjoon\\10814\\main.cpp","group":"local","local":true}
