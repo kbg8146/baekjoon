@@ -19,7 +19,10 @@ int main(){
             else if(vps[j]==')'){
                 cnt--;
             }
-            if(cnt<0) state=0;
+            if(cnt<0){
+                state=0;
+                break;
+            }
         }
         if(cnt!=0) state=0;
         
