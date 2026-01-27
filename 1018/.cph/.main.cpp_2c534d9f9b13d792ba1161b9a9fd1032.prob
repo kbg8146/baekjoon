@@ -1,0 +1,1 @@
+{"name":"Local: main","url":"c:\\baekjoon\\1018\\main.cpp","tests":[{"id":1769497576141,"input":"8 8\nWBWBWBWB\nBWBWBWBW\nWBWBWBWB\nBWBBBWBW\nWBWBWBWB\nBWBWBWBW\nWBWBWBWB\nBWBWBWBW","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\baekjoon\\1018\\main.cpp","group":"local","local":true}
