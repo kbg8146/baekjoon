@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <climits>
 using namespace std;
 
 int main(){
@@ -13,16 +13,36 @@ int main(){
             cin >> color[i][j];
         }
     }
-    for(int k=0;k<n-8;k++){
-        for(int l=0;l<m-8;l++){
+
+    int ans1=INT_MAX;
+    int ans2=INT_MAX;
+    int acnt=0,bcnt=0;
+    for(int k=0;k<=n-7;k++){
+        for(int l=0;l<=m-7;l++){
             for(int i=k;i<k+8;i++){
-                for(int j=k;j<k+8;j++){
-                    cout << color[i][j];
+                for(int j=l;j<l+8;j++){
+
+                    if((i+j)%2==1){
+                        if(color[i][j]!='W') acnt++;
+                    }
+                    else{
+                        if(color[i][j]!='B') acnt++;
+                    }
+
+                    if((i+j)%2==0){
+                        if(color[i][j]!='W') bcnt++;
+                    }
+                    else{
+                        if(color[i][j]!='B') bcnt++;
+                    }
                 }
-                cout << "\n";
             }
+            ans1 = min(acnt,bcnt);
+            ans2 = min(ans1,ans2);
+            acnt=0,bcnt=0;
         }
     }
+    cout << ans2;
 
     return 0;
 }
